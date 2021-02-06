@@ -1,0 +1,193 @@
+html{
+    font-size: 26.667vw;
+}
+li{
+    list-style: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 16px;
+}
+/* ***************头部****************/
+.header{
+    height: 78px;
+    width: 100vw;
+    background-color: rgb(50, 36, 175);
+    position: fixed;
+    top: 0;
+}
+.header .header-top{
+    background-color: #f11c1c;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.header .header-top p span{
+    font-size: 16px;
+}
+.header .header-top span{
+    font-size: 26px;
+    color: white;
+}
+.header .header-top ul{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header .header-top ul li:nth-child(1){
+    color: rgb(228, 225, 225);
+}
+.header .header-top ul li:nth-child(3){
+    color: rgb(228, 225, 225);
+}
+.header .header-top ul li:nth-child(2)::after{
+    content: "";
+    width: 16px;
+    height: 3px;
+    position: absolute;
+    bottom: 32px;
+    left: 195px;
+    background-color: white;
+}
+.header .header-bottom{
+    height: 40px;
+    background-color: white;
+    border-bottom: 1px solid rgb(165, 161, 161);
+}
+.header .header-bottom ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 14px;
+}
+.header .header-bottom ul li{
+    width: 25%;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(94, 92, 92);
+    border-right: 1px solid rgb(165, 161, 161);
+}
+.header .header-bottom ul li span{
+    color: rgb(94, 92, 92);
+}
+.header .header-bottom ul li:last-child{
+    border-right: none;
+}
+/* ***************内容区***************/
+.content{
+    background-color: #f5f3f3;
+    flex: 1;
+    margin-top: 78px;
+    padding: 0 14px;
+    margin-bottom: 48px;
+    padding: 0 12px;
+}
+.content ul{
+    display: flex;
+    flex-direction: column;
+}
+.content ul li{
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    background-color: #f5f3f3;
+    border-bottom: 1px solid rgb(114, 112, 112);
+}
+.content ul li div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 16px;
+}
+.content ul li .one h3{
+    font-size: 18px;
+}
+.content ul li div ul{
+    display: flex;
+    flex-direction: row;
+}
+.content ul li .one .money{
+    color: red;
+    font-size: 16px;
+}
+.content ul li .one .zi{
+    color: rgb(153, 153, 153);
+}
+.content ul li .two p,span{
+    color: rgb(99, 97, 97);
+}
+.content ul li  .three ul li{
+    padding: 1px 2px;
+    margin-right: 5px;
+    height: 20px;
+}
+.content ul li .three ul li:nth-child(1){
+    color: rgb(112, 230, 112);
+    border: 1px solid rgb(112, 230, 112);
+}
+.content ul li .three ul li:nth-child(2){
+    color: rgb(112, 230, 112);
+    border: 1px solid rgb(112, 230, 112);
+}
+.content ul li .three ul li:nth-child(3){
+    color: rgb(252, 172, 24);
+    border: 1px solid rgb(252, 172, 24);
+}
+.content ul li .three ul li:nth-child(4){
+    color: rgb(252, 172, 24);
+    border: 1px solid rgb(252, 172, 24);
+}
+.content ul li .four p span,.five span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: chocolate;
+    color: white;
+    padding: 2px 2px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 8px;
+}
+.content ul li .five span{
+    background-color: blueviolet;
+}
+.content ul li .four p,.five p{
+    color: rgb(99, 97, 97);
+}
+/* ***************尾部****************/
+.footer{
+    height: 48px;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    margin-left: -14px;
+    box-shadow: 0 0 1px black;
+}
+.footer ul{
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer ul li span{
+    font-size: 26px;
+}
+.footer ul li:nth-child(2) span{
+    
+    color: rgb(245, 59, 115);
+}
+.footer ul li h3{
+    font-size: 10px;
+    color: #7e7e7e;
+}
+.footer ul li:nth-child(2) h3{
+    color: rgb(245, 59, 115);
+}

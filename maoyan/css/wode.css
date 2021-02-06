@@ -1,0 +1,274 @@
+html{
+    font-size: 26.667vw;
+}
+li{
+    list-style: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 16px;
+}
+/* ***************头部****************/
+.header{
+    height: 48px;
+    width: 100vw;
+    background-color: #f11c1c;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: right; */
+    /* justify-items: right; */
+    justify-content: flex-end;
+}
+.header span{
+    font-size: 30px;
+    color: white;
+}
+/* ***************内容区***************/
+.content{
+    background-color: #f5f3f3;
+    flex: 1;
+    margin-top: 48px;
+    padding: 0 14px;
+    margin-bottom: 48px;
+    padding: 0 14px;
+}
+/* ********内容区first********/
+.content .content-first{
+    height: 100px;
+    background-color: #f5f3f3;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+}
+.content .content-first div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f74040;
+}
+.content .content-first p{
+    height: 100px;
+    line-height: 100px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.content .content-first img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+/* ********内容区second********/
+.content .content-second{
+    height: 40px;
+    background-color: #f74040;
+    border-radius: 5px;
+}
+.content .content-second ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 14px;
+}
+.content .content-second ul li{
+    width: 33%;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid rgb(100, 98, 98);
+    color: white;
+    font-size: 17px;
+}
+.content .content-second ul li:last-child{
+    border-right: none;
+}
+/* ********内容区three********/
+.content .content-three{
+    height: 120px;
+    border-radius: 5px;
+    /* background-color: rgb(50, 36, 175); */
+    margin-top: 10px;
+    border: 1px solid rgb(129, 127, 127);
+    padding: 5px 10px;
+}
+.content .content-three .tou{
+    height: 30px;
+    /* background-color: coral; */
+    line-height: 30px;
+}
+.content .content-three ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* line-height: 100px; */
+}
+/* .content .content-three ul li{
+    height: 100px;
+    width: 65px;
+    background-color: blueviolet;
+    margin-top: 10px;
+    text-align: center;
+} */
+
+.content .content-three ul li{
+    height: 80px;
+    width: 65px;
+    /* background-color: blueviolet; */
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.content .content-three ul li span{
+    display: inline-block;
+    height: 30px;
+    font-size: 30px;
+    color: rgb(230, 226, 47);
+}
+.content .content-three ul li p{
+    /* margin-top: 10px; */
+    font-size: 14px;
+    color: rgb(53, 52, 53);
+}
+/* ********内容区four********/
+.content .content-four{
+    height: 120px;
+    border-radius: 5px;
+    /* background-color: rgb(188, 182, 248); */
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(104, 103, 103);
+}
+.content .content-four .tou{
+    height: 30px;
+    /* background-color: coral; */
+    line-height: 30px;
+}
+.content .content-four ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 100px;
+}
+.content .content-four ul li{
+    height: 70px;
+    width: 33%;
+    background-color:  #f74040;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+.content .content-four ul li:last-child{
+    margin-right: 0;
+}
+/* ********内容区five********/
+.content-five{
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(104, 103, 103);
+} 
+.content .content-five .tou{
+    height: 30px;
+    /* background-color: coral; */
+    line-height: 30px;
+}
+.content .content-five ul{
+    display: flex;
+    flex-direction: row;
+}
+.content-five ul li{
+    width: 50%;
+    height: 80px;
+    text-align: center;
+}
+.content .content-five ul li span{
+    display: inline-block;
+    color:  #f74040;
+    font-size: 30px;
+    margin-top: 14px;
+}
+/* ********内容区six********/
+.content-six{
+    margin-top: 20px;
+} 
+.content .content-six .tou{
+    height: 30px;
+    /* background-color: coral; */
+    line-height: 30px;
+}
+.content .content-six ul{
+    display: flex;
+    flex-direction: row;
+}
+.content-six ul li{
+    width: 25%;
+    height: 100px;
+    /* background-color: burlywood; */
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.content .content-six ul li span{
+    display: inline-block;
+    height: 30px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.content .content-six li:nth-child(1) span{
+    color: rgb(231, 72, 9);
+}
+.content .content-six li:nth-child(2) span{
+    color: rgb(20, 17, 187);
+}
+.content .content-six li:nth-child(3) span{
+    color: rgb(252, 105, 47);
+}
+.content .content-six li:nth-child(4) span{
+    color: rgb(241, 163, 16);
+}
+.content .content-six li:nth-child(5) span{
+    color: rgb(236, 12, 12);
+}
+.content .content-six li:nth-child(6) span{
+    color: rgb(73, 11, 155);
+}
+.content .content-six li:nth-child(7) span{
+    color: rgb(69, 13, 105);
+}
+.content .content-six li p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(53, 52, 53);
+}
+/* ***************尾部****************/
+.footer{
+    height: 48px;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    margin-left: -14px;
+    box-shadow: 0 0 1px black;
+}
+.footer ul{
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer ul li span{
+    font-size: 26px;
+}
+.footer ul li:nth-child(5) span{
+    color: rgb(245, 59, 115);
+}
+.footer ul li h3{
+    font-size: 10px;
+    color: #7e7e7e;
+}
+.footer ul li:nth-child(5) h3{
+    color: rgb(245, 59, 115);
+}

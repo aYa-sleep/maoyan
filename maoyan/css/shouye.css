@@ -16,7 +16,6 @@ body{
 .header{
     height: 78px;
     width: 100vw;
-    /* background-color: aquamarine; */
     position: fixed;
     top: 0;
 }
@@ -44,7 +43,6 @@ body{
     width: 204px;
     height: 26px;
     border: none;
-    /* margin-left: 12px; */
 }
 /*********header-bottom**********/
 .header .header-bottom{
@@ -52,7 +50,6 @@ body{
     background-color: white;
     padding: 0 12px;
     box-shadow: 0 0 2px rgb(59, 59, 59);
-    /* border-bottom: 1px solid rgb(116, 115, 115); */
 }
 .header .header-bottom ul{
     display: flex;
@@ -89,11 +86,9 @@ body{
     margin-bottom: 48px;
 }
 .content .content-lun{
-    /* background-color: aquamarine; */
     height: 100px;
     border-radius: 6px;
     margin-top: 85px;
-    /* margin-bottom: 10px; */
 }
 .content .content-lun img{
     width: 100%;
@@ -101,7 +96,6 @@ body{
     border-radius: 6px;
 }
 .content .content-daohang{
-    /* background-color: rgb(169, 233, 85); */
     height: 80px;
     border-radius: 6px;
 }
@@ -109,12 +103,10 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* line-height: 100px; */
 }
 .content .content-daohang ul li{
     height: 80px;
     width: 65px;
-    /* background-color: blueviolet; */
     margin-top: 10px;
     text-align: center;
     display: flex;
@@ -143,7 +135,6 @@ body{
     color: rgb(53, 52, 53);
 }
 .content .content-huodong{
-    /* background-color: rgb(92, 134, 252); */
     height: 80px;
     border-radius: 6px;
 }
@@ -171,7 +162,6 @@ body{
 /* ********content-first*********/
 .content .content-first .tou{
     height: 30px;
-    /* background-color: coral; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -184,7 +174,6 @@ body{
 }
 .content .content-first .reying{
     height: 200px;
-    /* background-color: rgb(60, 85, 11); */
 }
 .content .content-first .reying ul{
     display: flex;
@@ -197,8 +186,6 @@ body{
     flex-shrink: 0;
     font-size: 16px;
     text-align: center;
-    /* line-height: 100px; */
-    /* background-color: rgb(228, 173, 184); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,7 +220,6 @@ body{
 /* ********content-second*********/
 .content .content-second .tou{
     height: 30px;
-    /* background-color: coral; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -246,7 +232,6 @@ body{
 }
 .content .content-second .reying{
     height: 200px;
-    /* background-color: rgb(60, 85, 11); */
 }
 .content .content-second .reying ul{
     display: flex;
@@ -259,7 +244,6 @@ body{
     flex-shrink: 0;
     font-size: 16px;
     text-align: center;
-    /* background-color: rgb(228, 173, 184); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,7 +277,6 @@ body{
 /* ********content-three*********/
 .content .content-three .tou{
     height: 30px;
-    /* background-color: coral; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -306,7 +289,6 @@ body{
 }
 .content .content-three .reying{
     height: 200px;
-    /* background-color: rgb(60, 85, 11); */
 }
 .content .content-three .reying ul{
     display: flex;
@@ -319,11 +301,8 @@ body{
     flex-shrink: 0;
     font-size: 16px;
     text-align: center;
-    /* line-height: 100px; */
-    /* background-color: rgb(228, 173, 184); */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     border-radius: 5px;
 }
 .content-three .reying ul li img{
@@ -344,7 +323,6 @@ body{
     font-size: 14px;
     margin-top: 3px;
     height: 20px;
-    /* background-color: rgb(77, 103, 218); */
     color: black;
     white-space: nowrap;
     overflow: hidden;
@@ -373,7 +351,6 @@ body{
 }
 .content .content-four .right{
     width: 48%;
-    /* margin-right: 2px; */
 }
 .content .content-four .right ul li{
     height: 190px;

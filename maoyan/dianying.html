@@ -16,454 +16,41 @@
                 <span class="iconfont icon-xiajiantou"></span>
             </p>
         <ul>
-            <li>热映</li>
-            <li>影院</li>                        
-            <li>待映</li>
+            <li v-for="i in top">{{i}}</li>
         </ul>
         <span class="iconfont icon-sousuo"></span>
         </div>
         <div class="header-bottom">
             <ul>
-                <li>品牌&nbsp;<span class="iconfont icon-caret-down"></span></li>
-                <li>全城&nbsp;<span class="iconfont icon-caret-down"></span></li>
-                <li>距离近&nbsp;<span class="iconfont icon-caret-down"></span></li>
-                <li>筛选&nbsp;<span class="iconfont icon-caret-down"></span></li>
+                <li v-for="j in bottom">{{j}}&nbsp;<span :class="className"></span></li>
             </ul>
         </div>
     </div>
     <!-- 内容区 -->
     <div class="content">
         <ul>
-            <li>
+            <li v-for="xinxi in dianying">
                 <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
+                    <h3>{{xinxi.position}}</h3>
                     <p>
-                        <span class="money">33元</span>
+                        <span class="money">{{xinxi.price}}元</span>
                         <span class="zi">起</span>
                     </p>
                 </div>
                 <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
+                    <p>{{xinxi.xiangxi}}</p>
+                    <span>{{xinxi.juli}}</span>
                 </div>
                 <div class="three">
                     <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
+                        <li v-for=" k in xx">{{k}}</li>
                     </ul>
                 </div>
                 <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
+                    <p><span>惠</span>{{xinxi.hui}}</p>
                 </div>
                 <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>棚烨影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县中和镇九点利四楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>酉阳电影城（激光巨幕）</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>保利万和国际影城（秀山店）</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>棚烨影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县中和镇九点利四楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>酉阳电影城（激光巨幕）</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>保利万和国际影城（秀山店）</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
-                </div>
-            </li>
-            <li>
-                <div class="one"> 
-                    <h3>秀山中影南方影城</h3>
-                    <p>
-                        <span class="money">33元</span>
-                        <span class="zi">起</span>
-                    </p>
-                </div>
-                <div class="two">
-                    <p>秀山土家族苗族自治县物流园区微电影12号楼</p>
-                    <span>27.5km</span>
-                </div>
-                <div class="three">
-                    <ul>
-                        <li>退</li>
-                        <li>改签</li>
-                        <li>小吃</li>
-                        <li>折扣卡</li>
-                    </ul>
-                </div>
-                <div class="four">
-                    <p><span>惠</span>你好，李焕英等4部电影特惠</p>
-                </div>
-                <div class="five">
-                    <p><span>卡</span>开卡特惠，5.9元起开卡</p>
+                    <p><span>卡</span>{{xinxi.ka}}</p>
                 </div>
             </li>
         </ul>
@@ -471,31 +58,250 @@
     <!-- 尾部 -->
     <div class="footer">
             <ul>
-                <li>
-                    <span class="iconfont icon-shouye
-                     "></span>
-                     <h3>首页</h3>
-                </li>
-                <li>
-                    <span class="iconfont icon-dianyingyuan
-                     "></span>
-                     <h3>电影院</h3>
-                </li>
-                <li>
-                    <span class="iconfont icon-xiaoshipinyingshi48"></span>
-                     <h3>小视频</h3>
-                </li>
-                <li>
-                    <span class="iconfont icon-yanchu
-                     "></span>
-                     <h3>演出</h3>
-                </li>
-                <li>
-                    <span class="iconfont icon-ren
-                     "></span>
-                     <h3>我的</h3>
+                <li v-for="i in mag">
+                    <span :class="i.className"></span>
+                     <h3>{{i.zi}}</h3>
                 </li>
             </ul>
     </div>
 </body>
 </html>
+<script src="./js/vue.js"></script>
+<script>
+        let vm=new Vue({
+            el:".header",
+            data:{
+                top:["热映","影院","待映"],
+                bottom:["品牌","全城","距离近","筛选"],
+                className:"iconfont icon-caret-down"
+            }
+        })
+        let vm1=new Vue({
+            el:".content",
+            data:{
+                dianying:[
+                {
+                    position:"秀山中影南方影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"保利万和国际影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"棚烨影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"汇龙国际电影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"酉阳电影院",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"太平洋影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"万和国际影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"紫鑫影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"秀山中影南方影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"保利万和国际影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"棚烨影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"汇龙国际电影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"酉阳电影院",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"太平洋影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"万和国际影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"紫鑫影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"秀山中影南方影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"保利万和国际影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"棚烨影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"汇龙国际电影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"酉阳电影院",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"太平洋影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"万和国际影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+                {
+                    position:"紫鑫影城",
+                    price:"33",
+                    xiangxi:"秀山土家族苗族自治县物流园区微电影12号楼",
+                    juli:"27.5km",
+                    hui:"你好，李焕英等4部电影特惠",
+                    ka:"开卡特惠，5.9元起开卡"
+                },
+            ],
+            xx:["退","改签","小吃","折扣卡"],
+            }
+        })
+
+        let vm2 = new Vue({
+            el:".footer",
+            data:{
+                mag:[
+                    {
+                        className:"iconfont icon-shouye",
+                        zi:"首页"
+                    },
+                    {
+                        className:"iconfont icon-dianyingyuan",
+                        zi:"电影院"
+                    },
+                    {
+                        className:"iconfont icon-xiaoshipinyingshi48",
+                        zi:"小视频"
+                    },
+                    {
+                        className:"iconfont icon-yanchu",
+                        zi:"演出"
+                    },
+                    {
+                        className:"iconfont icon-ren",
+                        zi:"我的"
+                    }
+                ]
+            }
+        })
+    </script>

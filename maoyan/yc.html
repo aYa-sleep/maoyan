@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>演出</title>
+    <link rel="stylesheet" href="./css/yanchu.css">
+    <link rel="stylesheet" href="./img/download (2)/font_2367595_c1u80xa1zah/iconfont.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <p>重庆
+            <span class="iconfont icon-xiajiantou"></span>
+        </p>
+        <p>演出</p>
+        <p>
+            <span class="iconfont icon-sousuo"></span>
+        </p>
+    </div>
+      <!-- 内容区 -->
+    <div class="content">
+        <div class="first">
+                <span class="iconfont icon-sousuo"></span>
+            <input type="text" placeholder="找明星、演出、场馆">
+        </div>
+        <div class="second">
+            <ul>
+                <li>
+                    <span class="iconfont icon-huatong"></span>
+                    <p>演唱会</p>
+                </li>
+                <li>
+                    <span class="iconfont icon-xiaochou"></span>
+                    <p>话剧歌剧</p>
+                </li>
+                <li>
+                    <span class="iconfont icon-image"></span>
+                    <p>休闲展览</p>
+                </li>
+                <li>
+                    <span class="iconfont icon-shanzi"></span>
+                    <p>戏曲相声</p>
+                </li>
+                <li>
+                    <span class="iconfont icon-nongtian"></span>
+                    <p>亲子艺术</p>
+                </li>
+            </ul>
+        </div>
+        <div class="three">
+            <div class="tou">
+                <h3>今日必抢</h3>
+                <span>更多必抢 ></span>
+            </div>
+            <div class="reying">
+                <ul>
+                    <li v-for="i in qiang">
+                        <img :src="i.img" alt="">
+                        <span>{{i.spp}}</span>
+                        <p>{{i.p}}</p>
+                    </li>
+                </ul>
+        </div>
+        <div class="four">
+            <img src="./img/jj/14.jpg" alt="">
+        </div>
+        <div class="five">
+            <div class="tou">
+                <h3>大咖新动态</h3>
+            </div>
+            <div class="reying">
+                <ul>
+                    <li v-for="j in daka">
+                        <img :src="j.img" alt="">
+                        <span>{{j.spp}}</span>
+                        <p>{{j.p}}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="six">
+                <div class="tou">
+                    <h3>什么值得看</h3>
+                </div>
+                <ul>
+                    <li v-for="k in zhide">
+                        <img :src="k.img" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="seven">
+                <div class="tou">
+                    <h3>为你推荐</h3>
+                </div>
+            </div>
+            <div class="eight">
+                <div class="left">
+                    <ul>
+                        <li v-for="x in left">
+                            <img :src="x.img" alt="">
+                            <p>{{x.spp}}</p>
+                            <p>{{x.p}}</p>
+                            <p>{{x.price}}</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <img src="./img/tuijian/5.jpg" alt="">
+                        </li>
+                        <li v-for="y in right">
+                            <img :src="y.img" alt="">
+                            <p>{{y.spp}}</p>
+                            <p>{{y.p}}</p>
+                            <p>{{y.price}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+            <ul>
+                <li v-for="i in mm">
+                    <span :class="i.className"></span>
+                     <h3>{{i.zi}}</h3>
+                </li>
+            </ul>
+    </div>
+</body>
+</html>
+<script src="./js/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el:".content",
+        data:{
+            qiang:[
+                {
+                    img:"./img/yc/1.jpg",
+                    spp:"套票7折起",
+                    p:"传奇之声 皇后乐队致敬音乐会 2021 新年特辑"
+                },
+                {
+                    img:"./img/yc/2.jpg",
+                    spp:"套票7折起",
+                    p:"【牛奶咖啡主唱】仙羽2021巡回演唱会上海站"
+                },
+                {
+                    img:"./img/yc/3.jpg",
+                    spp:"套票7折起",
+                    p:"【珍珠剧场】阿黛尔&艾德希兰 致敬音乐会"
+                }
+            ],
+            daka:[
+                {
+                    img:"./img/ren/1.jpg",
+                    spp:'艾夫杰尼',
+                    p:'去看最近动态'
+                },
+                {
+                    img:"./img/ren/2.jpg",
+                    spp:'安娜伊思',
+                    p:'去看最近动态'
+                },
+                {
+                    img:"./img/ren/3.jpg",
+                    spp:'白举纲',
+                    p:'去看最近动态'
+                },
+
+                {
+                    img:"./img/ren/4.jpg",
+                    spp:'鲍勃·迪伦',
+                    p:'去看最近动态'
+                },{
+                    img:"./img/ren/5.jpg",
+                    spp:'蔡依林',
+                    p:'去看最近动态'
+                },{
+                    img:"./img/ren/6.jpg",
+                    spp:'周杰伦',
+                    p:'去看最近动态'
+                },
+                {
+                    img:"./img/ren/7.jpg",
+                    spp:'陈奕迅',
+                    p:'去看最近动态'
+                },
+                {
+                    img:"./img/ren/8.jpg",
+                    spp:'邓紫棋',
+                    p:'去看最近动态'
+                },
+                {
+                    img:"./img/ren/9.jpg",
+                    spp:'房东的猫',
+                    p:'去看最近动态'
+                },
+                {
+                    img:"./img/ren/10.jpg",
+                    spp:'隔壁老樊',
+                    p:'去看最近动态'
+                },
+            ],
+            zhide:[
+                {
+                    img:"./img/yc/22.jpg"
+                },
+                {
+                    img:"./img/yc/23.jpg"
+                },
+                {
+                    img:"./img/yc/24.jpg"
+                },
+                {
+                    img:"./img/yc/25.jpg"
+                },
+            ],
+            left:[
+                {
+                    img:"./img/tuijian/1.jpg",
+                    spp:"【重庆】扯馆儿喜剧专场--沙坪坝扯馆儿剧场",
+                    p:"2021.2.5 - 2021.2.17",
+                    price:"￥100起"
+                },
+                {
+                    img:"./img/tuijian/2.jpg",
+                    spp:"环球VR沉浸影像展【零号空间特别季（重庆站）】",
+                    p:"2021.01.02 - 2021.03.15",
+                    price:"￥79起"
+                },
+                {
+                    img:"./img/tuijian/3.jpg",
+                    spp:"扯馆儿庚子年封箱喜剧专场--将被群星剧院",
+                    p:"2021.02.06 19：30",
+                    price:"￥80起"
+                },
+                {
+                    img:"./img/tuijian/4.jpg",
+                    spp:"音乐童话剧《白雪公主之魔镜》（大剧场）",
+                    p:"2021.02.17 14：30",
+                    price:"￥40起"
+                },
+            ],
+            right:[
+                {
+                    img:"./img/tuijian/5.jpg",
+                    spp:"【重庆】文旅驻场杂技秀《魔幻之都-极限快乐秀SHOW》",
+                    p:"2021.02.05 - 2021.02.17",
+                    price:"￥100起"
+                },
+                {
+                    img:"./img/tuijian/6.jpg",
+                    spp:"三体·时空沉浸展-重庆礼嘉站",
+                    p:"2020.10.1 - 2021.06.30",
+                    price:"￥59起"
+                },
+                {
+                    img:"./img/tuijian/7.jpg",
+                    spp:"野猪脱口秀",
+                    p:"2021.02.24 - 2021.03.31",
+                    price:"￥12.90起<"
+                }
+            ]
+        }
+    })
+    let vm2 = new Vue({
+            el:".footer",
+            data:{
+                mm:[
+                    {
+                        className:"iconfont icon-shouye",
+                        zi:"首页"
+                    },
+                    {
+                        className:"iconfont icon-dianyingyuan",
+                        zi:"电影院"
+                    },
+                    {
+                        className:"iconfont icon-xiaoshipinyingshi48",
+                        zi:"小视频"
+                    },
+                    {
+                        className:"iconfont icon-yanchu",
+                        zi:"演出"
+                    },
+                    {
+                        className:"iconfont icon-ren",
+                        zi:"我的"
+                    }
+                ]
+            }
+        })
+</script>

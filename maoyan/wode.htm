@@ -125,32 +125,41 @@
     <!-- 尾部 -->
     <div class="footer">
             <ul>
-                <li>
-                    <span class="iconfont icon-shouye
-                     "></span>
-                     <h3>首页</h3>
-                </li>
-                <li>
-                    <span class="iconfont icon-dianyingyuan
-                     "></span>
-                     <h3>电影院</h3>
-                </li>
-                <li>
-                    <span class="iconfont icon-xiaoshipinyingshi48"></span>
-                     <h3>小视频</h3>
-                </li>
-                <li>
-                    <span class="iconfont icon-yanchu
-                     "></span>
-                     <h3>演出</h3>
-                </li>
-                <li>
-                    <span class="iconfont icon-ren
-                     "></span>
-                     <h3>我的</h3>
+                <li v-for="i in mag">
+                    <span :class="i.className"></span>
+                     <h3>{{i.zi}}</h3>
                 </li>
             </ul>
-            
-</div>
+    </div>
 </body>
 </html>
+<script src="./js/vue.js"></script>
+<script>
+    let vm2 = new Vue({
+            el:".footer",
+            data:{
+                mag:[
+                    {
+                        className:"iconfont icon-shouye",
+                        zi:"首页"
+                    },
+                    {
+                        className:"iconfont icon-dianyingyuan",
+                        zi:"电影院"
+                    },
+                    {
+                        className:"iconfont icon-xiaoshipinyingshi48",
+                        zi:"小视频"
+                    },
+                    {
+                        className:"iconfont icon-yanchu",
+                        zi:"演出"
+                    },
+                    {
+                        className:"iconfont icon-ren",
+                        zi:"我的"
+                    }
+                ]
+            }
+        })
+</script>

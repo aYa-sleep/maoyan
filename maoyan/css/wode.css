@@ -1,5 +1,5 @@
 html{
-    font-size: 26.667vw;
+    font-size: 100vw;
 }
 li{
     list-style: none;
@@ -7,6 +7,10 @@ li{
 *{
     padding: 0;
     margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 body{
     font-size: 16px;
@@ -231,7 +235,7 @@ body{
     background-color: white;
     position: fixed;
     bottom: 0;
-    margin-left: -14px;
+    /* margin-left: -14px; */
     box-shadow: 0 0 1px black;
 }
 .footer ul{

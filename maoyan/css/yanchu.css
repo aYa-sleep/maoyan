@@ -1,5 +1,5 @@
 html{
-    font-size: 26.667rem;
+    font-size: 100vw;
     /* overflow: hidden; */
 }
 li{
@@ -8,6 +8,9 @@ li{
 *{
     padding: 0;
     margin: 0;
+}
+a{
+    text-decoration: none;
 }
 body{
     /* overflow: hidden; */

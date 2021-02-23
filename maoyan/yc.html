@@ -124,9 +124,11 @@
     <!-- 尾部 -->
     <div class="footer">
             <ul>
-                <li v-for="i in mm">
-                    <span :class="i.className"></span>
-                     <h3>{{i.zi}}</h3>
+                <li v-for="i in mag">
+                    <a :href="i.href">
+                        <span :class="i.className"></span>
+                        <h3>{{i.zi}}</h3>
+                    </a>
                 </li>
             </ul>
     </div>
@@ -134,6 +136,38 @@
 </html>
 <script src="./js/vue.js"></script>
 <script>
+    let vm2 = new Vue({
+            el:".footer",
+            data:{
+                mag:[
+                    {
+                        className:"iconfont icon-shouye",
+                        zi:"首页",
+                        href:"file:///D:/PHPnow-1.5.6/htdocs/maoyan/maoyan/shouye.html"
+                    },
+                    {
+                        className:"iconfont icon-dianyingyuan",
+                        zi:"电影院",
+                        href:"file:///D:/PHPnow-1.5.6/htdocs/maoyan/maoyan/dianying.html"
+                    },
+                    {
+                        className:"iconfont icon-xiaoshipinyingshi48",
+                        zi:"小视频",
+                        href:"file:///D:/PHPnow-1.5.6/htdocs/maoyan/maoyan/dianying.html"
+                    },
+                    {
+                        className:"iconfont icon-yanchu",
+                        zi:"演出"
+                    },
+                    {
+                        className:"iconfont icon-ren",
+                        zi:"我的",
+                        href:"file:///D:/PHPnow-1.5.6/htdocs/maoyan/maoyan/wode.html"
+                    }
+                ]
+            }
+        })
+
     let vm = new Vue({
         el:".content",
         data:{
@@ -262,36 +296,10 @@
                     img:"./img/tuijian/7.jpg",
                     spp:"野猪脱口秀",
                     p:"2021.02.24 - 2021.03.31",
-                    price:"￥12.90起<"
+                    price:"￥12.90起"
                 }
             ]
         }
     })
-    let vm2 = new Vue({
-            el:".footer",
-            data:{
-                mm:[
-                    {
-                        className:"iconfont icon-shouye",
-                        zi:"首页"
-                    },
-                    {
-                        className:"iconfont icon-dianyingyuan",
-                        zi:"电影院"
-                    },
-                    {
-                        className:"iconfont icon-xiaoshipinyingshi48",
-                        zi:"小视频"
-                    },
-                    {
-                        className:"iconfont icon-yanchu",
-                        zi:"演出"
-                    },
-                    {
-                        className:"iconfont icon-ren",
-                        zi:"我的"
-                    }
-                ]
-            }
-        })
+    
 </script>

@@ -59,8 +59,10 @@
     <div class="footer">
             <ul>
                 <li v-for="i in mag">
-                    <span :class="i.className"></span>
-                     <h3>{{i.zi}}</h3>
+                    <a :href="i.href">
+                        <span :class="i.className"></span>
+                        <h3>{{i.zi}}</h3>
+                    </a>
                 </li>
             </ul>
     </div>
@@ -283,7 +285,8 @@
                 mag:[
                     {
                         className:"iconfont icon-shouye",
-                        zi:"首页"
+                        zi:"首页",
+                        href:"file:///D:/PHPnow-1.5.6/htdocs/maoyan/maoyan/shouye.html"
                     },
                     {
                         className:"iconfont icon-dianyingyuan",
@@ -291,15 +294,18 @@
                     },
                     {
                         className:"iconfont icon-xiaoshipinyingshi48",
-                        zi:"小视频"
+                        zi:"小视频",
+                        href:"file:///D:/PHPnow-1.5.6/htdocs/maoyan/maoyan/dianying.html"
                     },
                     {
                         className:"iconfont icon-yanchu",
-                        zi:"演出"
+                        zi:"演出",
+                        href:"file:///D:/PHPnow-1.5.6/htdocs/maoyan/maoyan/yc.html"
                     },
                     {
                         className:"iconfont icon-ren",
-                        zi:"我的"
+                        zi:"我的",
+                        href:"file:///D:/PHPnow-1.5.6/htdocs/maoyan/maoyan/wode.html"
                     }
                 ]
             }
